@@ -1,0 +1,151 @@
+.createNewListing {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar {
+    width: 36%;
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar h2 {
+    margin: 8px;
+}
+
+.sidebarItems {}
+
+.sidebarItem {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    margin: 4px 0;
+    padding: 4px 8px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.sidebarItem a {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.sidebarItem svg {
+    width: 32px;
+    height: auto;
+    background-color: rgb(226, 229, 233);
+    padding: 4px;
+    border-radius: 50%;
+}
+
+.sidebarItem p {
+    text-transform: capitalize;
+}
+
+.sidebarItem:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.sidebarItem.active {
+    background-color: rgb(242, 244, 247);
+}
+
+.sidebarItem.active svg {
+    background-color: rgb(34, 123, 239);
+}
+
+.sidebarItem.active svg path {
+    stroke: rgb(255, 255, 255);
+}
+
+.sidebarItem:first-child {
+    position: relative;
+    margin-bottom: 8px;
+}
+
+.sidebarItem:first-child::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(208, 211, 215);
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+}
+
+.sidebarItem:nth-child(2) {
+    margin-top: 16px;
+}
+
+.content {
+    background-color: rgb(242, 244, 247);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+}
+
+.content h2 {
+    margin: 4px 4px 4px 12px;
+}
+
+.listingType {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.listingItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 25%;
+    margin: 8px;
+    padding: 8px;
+    list-style: none;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 0px #ccc;
+}
+
+.listingItem a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+
+.listingItem:hover {
+    background-color: rgb(242, 242, 242);
+}
+
+.listingItem svg {
+    width: 40px;
+    height: auto;
+    margin: 8px;
+}
+
+.listingItem h3 {
+    font-weight: 500;
+}
+
+.listingItem p {
+    font-size: 0.9rem;
+    color: rgb(105, 108, 112);
+}
